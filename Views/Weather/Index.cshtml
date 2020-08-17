@@ -1,0 +1,61 @@
+﻿@model Weather
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Current Weather Conditions</h2>
+<br/>
+<h4>Location: @Model.Name, @Model.State</h4>     
+<h6>Last Reading: @Model.Date</h6>
+
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            @Html.DisplayNameFor(model => model.Temp): @Html.DisplayFor(modelItem => Model.Temp)
+        </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.Visibility):  @Html.DisplayFor(modelItem => Model.Visibility)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            @Html.DisplayNameFor(model => model.CurrentCondition): @Html.DisplayFor(modelItem => Model.CurrentCondition)
+        </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.SLP):  @Html.DisplayFor(modelItem => Model.SLP)
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col">
+            @Html.DisplayNameFor(model => model.Dewpoint):  @Html.DisplayFor(modelItem => Model.Dewpoint)
+        </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.RelativeHumidity):  @Html.DisplayFor(modelItem => Model.RelativeHumidity)
+         </div>
+        <div class="col">
+            @Html.DisplayNameFor(model => model.WindChill):  @Html.DisplayFor(modelItem => Model.WindChill)
+        </div>
+    </div>
+    <div class="row">
+         <div class="col">
+             @Html.DisplayNameFor(model => model.Latitude):  @Html.DisplayFor(modelItem => Model.Latitude)
+         </div>
+          <div class="col">
+               @Html.DisplayNameFor(model => model.Longitude):  @Html.DisplayFor(modelItem => Model.Longitude)
+          </div>
+          <div class="col">
+               @Html.DisplayNameFor(model => model.Elev):  @Html.DisplayFor(modelItem => Model.Elev)
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+       
